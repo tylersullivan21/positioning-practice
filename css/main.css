@@ -72,9 +72,7 @@ html {
     background-image: url("https://s3.envato.com/files/169155966/01_preview10.jpg?irgwc=1&clickid=38R1…iapartner&utm_medium=affiliate&utm_source=impact_radius&mp=YieldKit%20GmbH");
     background-size: contain;
     background-attachment: fixed;
-    background-position: center center;
-
-  
+    background-position: center center;  
 }
 
 .hero-img img{
@@ -88,6 +86,53 @@ html {
     padding-bottom: 7rem;
 }
 
+/*
+.module1 h2 {
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+}
+*/
+
+.slide-add-on{
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease-in-out;
+    
+}
+
+@keyframes slideIn{
+    from {left: -100%;}
+    to {left: 0;}
+}
+/*
+.slide-remove-class{
+    position: relative;
+    animation-name: remove-slide;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+ 
+}
+
+@keyframes remove-slide{
+    from{left: 0;}
+    to {left: -100%;}
+}
+/*
+.module1 p{
+    position: relative;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease-out;
+}
+
+@keyframes slideLeft{
+    from {right: -100%;}
+    to {right: 0; transform: rotate(-360deg);}
+}
+*/
 .module2{
     grid-area: module2;
     background-color: #fff;
@@ -166,13 +211,44 @@ width: 100%;
 .left-list-item{
     grid-area: left-list-item;
     padding-right: 1.8em;
+    position: relative;
+    animation-name: slideIn;
+    animation-duration: 2s;
+    animation-timing-function: ease;
 }
+
 .center-list-item{
     grid-area: center-list-item;
+    padding-right: 1.8em;
+    position: relative;
+    animation-name: slideTop;
+    animation-duration: 2s;
+    animation-timing-function: ease;
 }
+@keyframes slideTop{
+    from{top:-1000%;}
+    to{top: 0;}
+}
+
+.button-centered{
+    position: relative;
+    animation-name: slideBottom;
+    animation-duration: 2s;
+    animation-timing-function: ease; 
+}
+
+@keyframes slideBottom{
+    from{bottom: -1000%;}
+    to{bottom: 0;}
+}
+
 .right-list-item{
     grid-area: right-list-item;
     padding-left: 1.8em;
+    position: relative;
+    animation-name: slideLeft;
+    animation-duration: 2s;
+    animation-timing-function: ease;
 }
 
 .icon-heading{
